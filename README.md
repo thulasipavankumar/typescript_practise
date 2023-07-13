@@ -59,4 +59,20 @@ const numbers = [1,2,3]
 
 numbers.map(x=>x+2)
 ```
+### Optional Parameters
+```typescript
+function buildName(firstName: string, lastName?: string) {
+  if (lastName) return firstName + " " + lastName;
+  else return firstName;
+}
+```
 
+### destructuring
+```typescript
+let o = {
+  a: "foo",
+  b: 12,
+  c: "bar",
+};
+let { a, b } = o;
+```
