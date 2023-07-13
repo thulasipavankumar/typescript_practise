@@ -25,12 +25,19 @@ let jsonData:any ="{}"
 //delayed initialization  (similar to any)
 let cars: string[];
 
-enum characters{
-    Naruto,
-    Sasuke,
-    Itachi,
+const enum FuelType{
+    Petrol,
+    LPG,
+    CNG,
+    Diesel,
+    Electric
 }
+type character = "protagonist"|"antagonist"|"companion"|"stranger"
 
+let naruto : character = "protagonist"
+let kaguya : character = "antagonist"
+
+console.log(` naruto is ${naruto} kaguya is ${kaguya}`) 
 
 ```
 ### Functions
@@ -75,4 +82,28 @@ let o = {
   c: "bar",
 };
 let { a, b } = o;
+```
+### interface
+```typescript
+const enum FuelType{
+    Petrol,
+    LPG,
+    CNG,
+    Diesel,
+    Electric
+}
+interface car{
+    engine: string,
+    fuel: FuelType,
+    yearOfManufacture:number,
+    modelName:string,
+    description?:string
+}
+let kiaPicanto:car = {
+    engine:"998 cc",
+    fuel:FuelType.Petrol,
+    yearOfManufacture:2021,
+    modelName:"Picanto",
+    description:"The Kia Picanto is a city car that has been produced by the South Korean car manufacturer, Kia, since 2003" 
+}
 ```
