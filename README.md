@@ -7,12 +7,30 @@
 
 ```typescript
 
+"use strict";
 let age: number = 32;
+
 let isAlive: boolean = true;
+
+let firstName:string = "Naruto";
+
+let arr: Array<number>;
+
+arr=[1,2,3,4];
+
+
 let jsonData:any ="{}"
 
+
 //delayed initialization  (similar to any)
-let foundValue;
+let cars: string[];
+
+enum characters{
+    Naruto,
+    Sasuke,
+    Itachi,
+}
+
 
 ```
 ### Functions
