@@ -133,3 +133,24 @@ let me:Human = new Human(32,'Pavan Kumar Tulasi');
 me.print();
 let kbc:Bank = new Bank('KBC');
 ```
+
+### Generics
+```typescript
+function printData<T>(data: T) {
+    console.log("data: ", data);
+}
+
+printData(2);
+printData("hello");
+printData(true);
+
+interface UserData<X,Y> {
+    name: X;
+    rollNo: Y;
+}
+
+const user: UserData<string, number> = {
+    name: "Naruto",
+    rollNo: 1
+}
+```
