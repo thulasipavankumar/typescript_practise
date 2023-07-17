@@ -14,6 +14,6 @@ interface UserData<X,Y> {
 }
 
 const user: UserData<string, number> = {
-    name: "Ram",
+    name: "naruto",
     rollNo: 1
 }
