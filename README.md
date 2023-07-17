@@ -154,3 +154,10 @@ const user: UserData<string, number> = {
     rollNo: 1
 }
 ```
+
+`Things to learn more about`
+- Generics and function
+- Generics and Interfaces
+- Generics and Classes
+- Generic Constraints
+- Built-in Constraints
