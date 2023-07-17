@@ -107,3 +107,29 @@ let kiaPicanto:car = {
     description:"The Kia Picanto is a city car that has been produced by the South Korean car manufacturer, Kia, since 2003" 
 }
 ```
+
+### class
+- **Abstract class** will not allow to create a instance for it
+- constructor field with private/public modifiers will create the same fields in the class `refer to the class Human below`
+```typescript
+class Human{
+     // by using public or private in the construct automatically properties  are created in the class 
+     // and they can be using in the methods/functions down the line in the class
+     constructor(public age:number,public name:string){}
+
+     print():void{
+        console.log(`name:${this.name} age:${this.age}`)
+     }
+}
+
+class Bank{
+    name:string =''
+    constructor(name:string){
+        this.name =name
+    }
+}
+
+let me:Human = new Human(32,'Pavan Kumar Tulasi');
+me.print();
+let kbc:Bank = new Bank('KBC');
+```
